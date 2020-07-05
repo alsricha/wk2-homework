@@ -1,15 +1,118 @@
 /* Navigation Menu */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Notable', sans-serif;
+}
 
-    /*Positioning */
-    .navbar-brand
-    {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        text-align: center;
-        margin:0 auto;
-    }
-    .navbar-toggle {
-        z-index:3;
-    }
+body{
+    background:#EAE7DC;
+    font-family: 'Roboto Slab', serif;
 
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #D8C385;
+    padding: 40px 0;
+    
+}
+.wrapper .sidebar h2{
+    color: #E8584F;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
+.wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,225.05);
+
+}
+.wrapper .sidebar ul li a{
+    color: #E8584F;
+    display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+   width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+    background: #EAE7DC;
+}
+
+.wrapper .sidebar .social_media{
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+    display: block;
+    width: 40px;
+    background: #D8C385;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    color: #E8584F;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.wrapper .container{
+    width: 100%;margin-left: 200px;
+
+}
+
+.wrapper .container .col-md-9{
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    border-bottom: 1px solid #e0e4e8;
+    
+}
+
+/* Footer */
+
+#sticky-footer {
+    flex-shrink: none;
+  }
+
+/* Portfolio Page */
+.card-body{
+    padding: 1.25rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0;
+}
+
+
+.cardSet1 {
+    background-color: #669999;
+}
+
+.cardSet2 {
+    background-color: #cc6666;
+}
+
+.cardSet3 {
+    background-color: #669999;
+}
